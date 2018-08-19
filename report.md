@@ -19,17 +19,17 @@ As custom software, Skynet has several advantages and disadvantages. Because bot
 
 ## Security
 ### Travis CI
-For most projects, Travis CI is sold as a service. However, Enterprise liscensing is available and allows Travis CI to be run on local servers, or in the cloud environment of our choosing. Travis CI Enterprise also supports GitHub Enterprise, meaning it can be used without exposing any of our code or data to the world outside our network. However, Travis CI is closed source, so while data can be secured some level of trust is still required.
+For most projects, Travis CI is sold as a service. However, Enterprise liscensing is available and allows Travis CI to be run on local servers, or in the cloud environment of our choosing. Travis CI Enterprise also supports GitHub Enterprise, meaning it can be used without exposing any of our code or data to the world outside our network. However, Travis CI may not offer full source code with Enterprise liscensing, which could lead to auditing issues and the potential for vulnerabilities.
 
 ### Skynet
 As custom software, Skynet requires internally managed servers, simplifying data security. Also, because Skynet is internally developed and based on the open-source Jenkins software, it's code can be fully audited to provide an additional layer of security.
 
 ## Cost
 ### Travis CI
-Gotta pay them, and probably hosting fees too
+Costs associated with Travis CI include hosting and licensing. Assuming 100 users, annual liscensing fees will be $40,000. This figure includes unlimited concurrent builds, updates, and support. While the resources required to perform a build and the number of builds per day will vary widely between projects, it is estimated that adding the required build servers to existing data centers will cost $75,000 per year. Because dedicated servers will be used, these costs will be static.
 
 ### Skynet
-Gotta pay our devs and hosting fees
+Because Skynet is based on Open Source tools, there will be no liscensing fees. (Excepting OS or complier liscensing to actually run the builds, which should be negligable since most development is on Linux or GLaDOS.) Hosting fees for Skynet should be comperable to Travis CI, since the underlying builds are the same. However, there may be a slight reduction in resource usage versus Travis CI since Skynet reuses build environments. The greatest cost associated with Skynet is development and maintenance. Basing Skynet on Jenkins helps, but significant development work will be needed to bring the system online.  Estimated first year development costs are $150,000 with an estimated $30,000 in maintenance required thereafter. These costs are only estimates, and with custom and open-source software the company is ultimately responsible for costs related to critical bugs and vulnerabilities. 
 
 ## Reliability
 ### Travis CI

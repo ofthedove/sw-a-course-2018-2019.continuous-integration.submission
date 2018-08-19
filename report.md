@@ -19,10 +19,10 @@ As custom software, Skynet has several advantages and disadvantages. Because bot
 
 ## Security
 ### Travis CI
-Externally hosted (mostly.) External ownership of source code.
+For most projects, Travis CI is sold as a service. However, Enterprise liscensing is available and allows Travis CI to be run on local servers, or in the cloud environment of our choosing. Travis CI Enterprise also supports GitHub Enterprise, meaning it can be used without exposing any of our code or data to the world outside our network. However, Travis CI is closed source, so while data can be secured some level of trust is still required.
 
 ### Skynet
-Must host ourselves, Some source owned internally, some external components used.
+As custom software, Skynet requires internally managed servers, simplifying data security. Also, because Skynet is internally developed and based on the open-source Jenkins software, it's code can be fully audited to provide an additional layer of security.
 
 ## Cost
 ### Travis CI

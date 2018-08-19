@@ -33,17 +33,17 @@ Because Skynet is based on Open Source tools, there will be no liscensing fees. 
 
 ## Reliability
 ### Travis CI
-Good, not our problem
+Travis CI has a proven record of reliable service, and the enterprise license includes support. If Travis CI were to experience an outage, they would be responsible. However, communications issues due to a support contact's unfamiliarity with our systems and lack of access to our data centers could result in longer than necessary downtimes.
 
 ### Skynet
-Depends on how well we build it, our problem if it breaks
+The reliability of Skynet will be heavily dependant upon project management. If initial development is well managed, and sufficient resources are allocated for program maintenance, Skynet is expected to have reliability similar to Travis CI. However, when issues do emerge no outside support will be available; the company will be entirely responsible for bringing the program back online. This could prove to be an asset, however, since support staff will be thoroughly familiar with the software and our configuration, and will already have security clearance.
 
 ## Extensibility
 ### Travis CI
-Read docs on plugins
+While Travis CI ships as a complete solution, it does have an API to allow for the development of extensions and external tools. This API is limited, though, and doesn't offer nearly the customization potential of Skynet.
 
 ### Skynet
-Totally extensible, we (mostly) built it ourselves!
+As custom software, Travis CI is nearly infinitely extensible. This is a significant advantage when undertaking projects as diverse and unusual as those pursued by Aperature Science. However, this advantage is not without risk. Every extension and modification increases maintenance requirements, and to a greater degree the more unusual the modification. "Infinitely extensible" is better stated "As extensible as you can afford." 
 
 ## Workflow Integration
 ### Travis CI

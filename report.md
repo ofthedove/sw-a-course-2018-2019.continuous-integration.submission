@@ -1,5 +1,59 @@
 # Comparison of Travis CI and Skynet
 
+## Introduction
+Introduction
+
+## Problem Definition
+Things! And Stuff!
+
+## Implementation Overview
+### Travis CI
+Uses a YML file
+
+### Skynet
+Uses a "build branch"
+
+## Security
+### Travis CI
+Externally hosted (mostly.) External ownership of source code.
+
+### Skynet
+Must host ourselves, Some source owned internally, some external components used.
+
+## Cost
+### Travis CI
+Gotta pay them, and probably hosting fees too
+
+### Skynet
+Gotta pay our devs and hosting fees
+
+## Reliability
+### Travis CI
+Good, not our problem
+
+### Skynet
+Depends on how well we build it, our problem if it breaks
+
+## Extensibility
+### Travis CI
+Read docs on plugins
+
+### Skynet
+Totally extensible, we (mostly) built it ourselves!
+
+## Workflow Integration
+### Travis CI
+Easy if you're already using GitHub
+
+### Skynet
+Maybe?
+
+## Conclusion
+Skynet, because we're paranoid
+
+
+
+
 The purpose of this report is to evaluate continuous integration tools for use by Aperture Science, and reccomend a specific tool based on a variety of critera.
 
 ## Overview

@@ -47,10 +47,14 @@ As custom software, Travis CI is nearly infinitely extensible. This is a signifi
 
 ## Workflow Integration
 ### Travis CI
-Easy if you're already using GitHub
+Travis CI integrates with GitHub, in our case integrating with our local GitHub Enterprise instance. Repositories can easily be added to Travis CI, and automated builds will occur once a .travis.yml configuration file has been added to the repository. Options for when to perform builds can be easily changed, and default to building any time a branch or pull request is pushed. Builds can also be performed on a monthly, weekly, or daily basis. Builds will only occur for branches which contain a .travis.yml file.
+
+The .travis.yml file contains all the information needed to perform the build. The most basic configuration file states the language used, though many more options are available. The most common are used to set the os and os version, set required permissions, specify the build script to run, install dependancies, and modify Git's behavior. One popular feature of .travis.yml configuration is the build matrix, which allows you to specificy several paramaters and will automatically perform builds for every combination of parameters, with some additional customization options.
 
 ### Skynet
-Maybe?
+Skynet obtains build configuration from a skynet.lua configuration file. Unlike Travis CI, this file applies to the whole repository and cannot differ between branches. Only the skynet.lua file in the `build` branch will be considerd when peforming builds for the repository, and it is reccomended to remove all other files in the `build` branch. Repositories will only be considered after being added to the repos.lua file in the applcommon.skynet repository.
+
+The skynet.lua and .travis.yml files contain similar info, but differ in key ways. Because the skynet.lua files applies to the whole repository, it can contain configuration for when builds are performed. Like Travis CI, builds can be triggered by a push, a pull request, or a cron job. Unlike Travis CI, the builds performed by each of these events are independant and can have different configurations. For each event, multiple builds can be configured. Each build specifies the tools to be used, and the script to be run. Other parameters are available, though not as many as Travis CI. Of course, if a new feature is required it can be added, and there is no reason to support features our organization is not using. 
 
 ## Conclusion
-Because we require the security and scale of a self-hosted solution, and because we can spread the support costs over a large number of teams and projects, Skynet is recommened for use. While Travis CI may be an excellent choice for small and open source projects, at scale it cannot compete with the improved compatability and adaptability of Skynet.
+Because we require the security and scale of a self-hosted, internally developed and maintained solution, and because we can spread the support costs over a large number of teams and projects, Skynet is recommened for use. While Travis CI may be an excellent choice for small and open source projects, at scale it cannot compete with the improved compatability and adaptability of Skynet.
